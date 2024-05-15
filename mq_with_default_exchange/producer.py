@@ -1,6 +1,18 @@
 import time
 import pika
 
+
+# Publisher
+# • Create a connection, say CN
+# • Create a channel in CN, say CH
+# • [Optional] Create an Exchange
+# • Specify the bindings
+# • If the queue does not exist already
+# • Create a queue through the channel
+# • Publish the message
+# • Close the connection
+# • Automatically closes the channel
+
 # create a connection
 connection = pika.BlockingConnection(pika.ConnectionParameters('0.0.0.0',5672))
 

@@ -1,5 +1,15 @@
 import pika
 
+# Subscriber
+# • Create a connection say CN
+# • Create a channel in CN, say CH
+# • Create the queue, if it does not
+# exist already and associate it with
+# the channel CH
+# • Associate a call-back function with
+# the message queue
+# • Start consuming the messages
+
 
 def main():
     # create a connection

@@ -1,3 +1,14 @@
+# Publisher
+# • Create a connection, say CN
+# • Create a channel in CN, say CH
+# create exchange
+# • Publish the message
+# • Close the connection
+# • Automatically closes the channel
+# • Subscriber
+# •
+
+
 import time
 import pika
 
@@ -28,6 +39,8 @@ channel.basic_publish(exchange=exchange_name, routing_key=routing_key, body=mess
 print(f"Sent: {message}")
 
 
-time.sleep(120)
+time.sleep(120) 
 # Close the connection
-connection.close()
+connection.close() 
+
+
